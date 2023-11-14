@@ -3,6 +3,9 @@
 
     <application>
         <activity
+            android:name=".CoreActivity"
+            android:exported="false" />
+        <activity
             android:name=".MiSDKActivity"
             android:exported="false" />
     </application>
