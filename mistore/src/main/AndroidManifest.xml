@@ -3,9 +3,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/baseball"
+        android:icon="@drawable/baseball"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/baseball"
+        android:roundIcon="@drawable/baseball"
         android:supportsRtl="true"
         android:theme="@style/Theme.MiStoreDemo">
         <activity
