@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.bupt.edison.mi.store'
+    namespace 'com.bupt.edison.app.store'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.bupt.edison.mi.store"
+        applicationId "com.bupt.edison.app.store"
         minSdk 30
         targetSdk 34
         versionCode 1
