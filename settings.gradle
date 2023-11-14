@@ -17,3 +17,5 @@ rootProject.name = "MiStoreDemo"
 include ':app'
 include ':core'
 include ':dd'
+include ':mistore'
+include ':oppostore'
