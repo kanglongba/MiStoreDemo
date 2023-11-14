@@ -1,8 +1,7 @@
-package com.bupt.edison.mi.store
+package com.bupt.edison.app.store
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.bupt.edison.app.store.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
