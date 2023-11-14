@@ -8,6 +8,9 @@
         <activity
             android:name=".MiSDKActivity"
             android:exported="false" />
+        <activity
+            android:name="com.bupt.edison.common.core.CoreActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
