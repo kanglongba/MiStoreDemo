@@ -14,3 +14,6 @@
 
 做实验证明：
 1.可以在mi的AndroidManifest.xml中重新声明core的Activity
+
+做实验证明：
+1.[fat-aar](https://github.com/kezong/fat-aar-android)已经两年没有维护了，不支持Gradle 8，不推荐继续使用
