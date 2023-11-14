@@ -7,17 +7,18 @@
     tools:context="com.bupt.edison.common.core.CoreActivity">
 
     <TextView
+        android:id="@+id/name"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:textColor="@android:color/black"
-        android:textSize="35sp"
-        android:text="Core Activity"
+        android:background="@drawable/bg_button"
         android:paddingStart="15dp"
         android:paddingEnd="15dp"
-        android:background="@drawable/bg_button"
+        android:text="Core Activity"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

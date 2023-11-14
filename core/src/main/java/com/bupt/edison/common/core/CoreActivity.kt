@@ -1,12 +1,19 @@
 package com.bupt.edison.common.core
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.bupt.edison.mi.core.R
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.bupt.edison.mi.core.databinding.ActivityCoreBinding
 
 class CoreActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityCoreBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_core)
+        binding = ActivityCoreBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.name.setOnClickListener {
+            Toast.makeText(this@CoreActivity, "Hi!", Toast.LENGTH_SHORT)
+                .show()
+        }
     }
 }
