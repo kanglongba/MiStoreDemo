@@ -13,7 +13,7 @@
 
 ### 把core和mi分别编译成aar，可以达到同样的效果  
 
-mistore通过libs依赖core和mi的aar时：  
+MiStore通过libs依赖core和mi的aar时：  
 1.mi中的资源可以覆盖core中的同名资源  
 2.同样的名字，mi中的selector可以正确覆盖core中的shape  
 3.mi中的activity_core.xml可以覆盖core中的activity_core.xml  
