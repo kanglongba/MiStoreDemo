@@ -12,7 +12,7 @@ class CoreActivity : AppCompatActivity() {
         binding = ActivityCoreBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.name.setOnClickListener {
-            Toast.makeText(this@CoreActivity, "Hi!", Toast.LENGTH_SHORT)
+            Toast.makeText(this@CoreActivity, "Hi, Core Module!", Toast.LENGTH_SHORT)
                 .show()
         }
     }

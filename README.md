@@ -17,3 +17,9 @@
 
 做实验证明：
 1.[fat-aar](https://github.com/kezong/fat-aar-android)已经两年没有维护了，不支持Gradle 8，不推荐继续使用
+
+做实验证明：
+1.在MiStore中直接启动Core中的CoreActivity，CoreActivity同样会被mi中的activity_core.xml覆盖
+2.通过mi间接启动Core的CoreActivity，CoreActivity同样会被mi中的activity_core.xml覆盖
+3.在MiStore中，无论直接还是间接启动Core中的CoreActivity，Core中的btn_button.xml会被Mi中的btn_button.xml覆盖
+
