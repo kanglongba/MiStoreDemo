@@ -14,6 +14,10 @@ import com.bupt.edison.common.core.CoreActivity
  */
 object MiSDK {
 
+    fun init() {
+        Core.setCoreModuleName("Rewrite Core Module")
+    }
+
     fun getName(): String {
         return "Mi ${Core.getCoreModuleName()}"
     }

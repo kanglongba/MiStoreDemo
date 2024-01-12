@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context="com.bupt.edison.common.core.CoreActivity">
 
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo_splash"
+        app:layout_constraintBottom_toTopOf="@id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
         android:id="@+id/name"
         android:layout_width="wrap_content"

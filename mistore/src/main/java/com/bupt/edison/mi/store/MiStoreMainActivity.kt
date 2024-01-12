@@ -3,6 +3,7 @@ package com.bupt.edison.mi.store
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.bupt.edison.common.core.Core
 import com.bupt.edison.common.core.CoreActivity
 import com.bupt.edison.mi.sdk.MiSDK
 import com.bupt.edison.mi.store.databinding.ActivityMiStoreMainBinding
@@ -14,7 +15,9 @@ class MiStoreMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMiStoreMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.title.text = MiSDK.getName()
+        binding.title.text = """
+            ${Core.getCoreModuleName()}
+            ${MiSDK.getName()}"""
         binding.start.setOnClickListener {
             MiSDK.startCoreActivity(this@MiStoreMainActivity)
         }

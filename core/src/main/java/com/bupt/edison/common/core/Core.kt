@@ -9,7 +9,13 @@ package com.bupt.edison.common.core
  */
 object Core {
 
+    var name: String = "Core Module"
+
+    fun setCoreModuleName(coreName: String) {
+        name = coreName
+    }
+
     fun getCoreModuleName(): String {
-        return "Core Module"
+        return name
     }
 }
