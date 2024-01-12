@@ -21,3 +21,4 @@ MiStore通过libs依赖core和mi的aar时：
 5.在MiStore中直接启动Core中的CoreActivity，CoreActivity同样会被mi中的activity_core.xml覆盖  
 6.通过mi间接启动Core的CoreActivity，CoreActivity同样会被mi中的activity_core.xml覆盖  
 7.在MiStore中，无论直接还是间接启动Core中的CoreActivity，Core中的btn_button.xml会被Mi中的btn_button.xml覆盖  
+8.mi编译成mi-debug.aar，core编译成core-debug.aar之后，mi-debug.aar和core-debug.aar之间并没有依赖关系，所以它们之间的同名资源覆盖关系取决于两个aar文件在app工程中的编译顺序。如果是mi-debug.aar先编译，core-debug.aar后编译，那么core-debug.aar中的同名资源会覆盖mi-debug.aar中的资源，这是不符合我们预期的。而aar文件的名字决定它们的编译顺序。但具体的决定关系我并不清楚，总之大体跟文件名的字母排序有关。
